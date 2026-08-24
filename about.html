@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Hello World - Discover our mission, core values, technology stack, and the visionary team behind the platform.">
+    <title>About Us • Hello World</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Ambient Background Effects -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Top Navigation Header -->
+    <header class="top-nav">
+        <a href="hello_world.html" class="brand" title="Hello World Home">
+            <div class="brand-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                    <path d="M2 12h20"></path>
+                </svg>
+            </div>
+            <span class="brand-text">Hello<span class="highlight">World</span></span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="nav-links">
+            <a href="hello_world.html" class="nav-link">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <span>Home</span>
+            </a>
+            <a href="about.html" class="nav-link active">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <span>About</span>
+            </a>
+            <a href="contact.html" class="nav-link">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span>Contact</span>
+            </a>
+        </nav>
+
+        <!-- Navigation Actions -->
+        <div class="nav-actions">
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+
+            <a href="hello_world.html" class="nav-cta-btn">
+                <span>Join Platform</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open mobile navigation menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+        <a href="hello_world.html" class="mobile-nav-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            </svg>
+            <span>Home Portal</span>
+        </a>
+        <a href="about.html" class="mobile-nav-link active">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <span>About Us</span>
+        </a>
+        <a href="contact.html" class="mobile-nav-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span>Contact Support</span>
+        </a>
+        <a href="hello_world.html" class="mobile-nav-cta">Sign In / Register</a>
+    </div>
+
+    <!-- Main Content Container -->
+    <main class="page-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-badge">✨ Pioneering The Next Generation</div>
+            <h1 class="hero-title">We Build Tools for the <span class="highlight">Visionaries</span> of Tomorrow</h1>
+            <p class="hero-subtitle">
+                Hello World is on a mission to empower creators, developers, and global teams with blazing performance, hyper-secure authentication, and breathtaking UI design.
+            </p>
+            <div class="hero-actions">
+                <a href="contact.html" class="btn-primary-glow">
+                    <span>Talk with Our Team</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+                <a href="hello_world.html" class="btn-secondary-glass">
+                    <span>Explore Auth Dashboard</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Key Metrics / Statistics Section -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-num">99.99%</div>
+                    <div class="stat-label">Uptime SLA</div>
+                    <div class="stat-desc">Enterprise-grade distributed reliability</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-num">250K+</div>
+                    <div class="stat-label">Active Creators</div>
+                    <div class="stat-desc">Developers and teams building daily</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-num">140+</div>
+                    <div class="stat-label">Global Regions</div>
+                    <div class="stat-desc">Low-latency edge deployment points</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                    <div class="stat-num">&lt; 15ms</div>
+                    <div class="stat-label">Edge Latency</div>
+                    <div class="stat-desc">Instantaneous authentication response</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Mission & Core Principles -->
+        <section class="values-section">
+            <div class="section-header">
+                <span class="section-badge">Core Principles</span>
+                <h2 class="section-title">Engineered with Purpose & Passion</h2>
+                <p class="section-subtitle">We believe great software should be deeply secure, astonishingly fast, and delightfully intuitive.</p>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon-box">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
+                        </svg>
+                    </div>
+                    <h3 class="value-title">Radical Simplicity</h3>
+                    <p class="value-text">
+                        Underneath our sleek glass interfaces lies sophisticated architecture that eliminates friction so developers can focus purely on creativity and execution.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon-box">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="value-title">Security & Privacy First</h3>
+                    <p class="value-text">
+                        Zero-trust infrastructure, cryptographic state verification, and advanced encryption protocols protect your credentials and data at every step.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon-box">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="value-title">Hyper-Speed Performance</h3>
+                    <p class="value-text">
+                        Every transition, button press, and API handshake is optimized for sub-millisecond responsiveness with lightweight, zero-bloat modern code.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon-box">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="value-title">Community Driven</h3>
+                    <p class="value-text">
+                        Built for and by developers. We listen closely to user feedback, ship continuous improvements, and empower developers to build without boundaries.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Matrix Section -->
+        <section class="tech-section">
+            <div class="tech-matrix">
+                <div class="tech-info">
+                    <span class="section-badge">Modern Stack</span>
+                    <h3>Built for the Next Generation of the Web</h3>
+                    <p>
+                        From dynamic reactive CSS variables to resilient local storage persistence and hardware-accelerated animations, our architecture sets the benchmark for web excellence.
+                    </p>
+                    <div class="tech-features-list">
+                        <div class="tech-feature-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Sub-50ms Theme Switching & State Sync</span>
+                        </div>
+                        <div class="tech-feature-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Universal Responsive Grid & Glassmorphism Design</span>
+                        </div>
+                        <div class="tech-feature-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Live Form Validation & Toast Notification System</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-code-preview">
+                    <div class="code-header">
+                        <span class="code-dot dot-red"></span>
+                        <span class="code-dot dot-yellow"></span>
+                        <span class="code-dot dot-green"></span>
+                        <span class="code-filename">config.architecture.js</span>
+                    </div>
+                    <div class="code-lines">
+                        <p><span class="code-keyword">export const</span> <span class="code-fn">platformConfig</span> = {</p>
+                        <p>&nbsp;&nbsp;<span class="code-prop">name</span>: <span class="code-str">"Hello World"</span>,</p>
+                        <p>&nbsp;&nbsp;<span class="code-prop">version</span>: <span class="code-str">"2.4.0-future"</span>,</p>
+                        <p>&nbsp;&nbsp;<span class="code-prop">security</span>: {</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-prop">encryption</span>: <span class="code-str">"AES-256-GCM"</span>,</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-prop">zeroTrust</span>: <span class="code-keyword">true</span></p>
+                        <p>&nbsp;&nbsp;},</p>
+                        <p>&nbsp;&nbsp;<span class="code-prop">edgeNetwork</span>: <span class="code-str">"Global Distributed"</span>,</p>
+                        <p>&nbsp;&nbsp;<span class="code-prop">latency</span>: <span class="code-str">"&lt; 15ms"</span></p>
+                        <p>};</p>
+                        <p class="code-comment">// Ready to deploy into production 🚀</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership & Team Section -->
+        <section class="team-section">
+            <div class="section-header">
+                <span class="section-badge">Our Team</span>
+                <h2 class="section-title">Meet the Minds Behind the Platform</h2>
+                <p class="section-subtitle">A collective of engineers, designers, and innovators building digital tools with uncompromising precision.</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar-box">
+                        <div class="team-avatar-inner">AM</div>
+                    </div>
+                    <h3 class="team-name">Alex Morgan</h3>
+                    <div class="team-role">Founder & Chief Architect</div>
+                    <p class="team-bio">Distributed systems specialist and open-source enthusiast with over a decade of core infrastructure experience.</p>
+                    <div class="team-socials">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" title="GitHub" aria-label="GitHub">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" title="Twitter / X" aria-label="Twitter">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar-box">
+                        <div class="team-avatar-inner">ER</div>
+                    </div>
+                    <h3 class="team-name">Elena Rostova</h3>
+                    <div class="team-role">VP of Product Design</div>
+                    <p class="team-bio">Award-winning interaction designer passionate about glassmorphic depth, spatial micro-interactions, and visual harmony.</p>
+                    <div class="team-socials">
+                        <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" title="Dribbble" aria-label="Dribbble">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94"></path>
+                                <path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32"></path>
+                                <path d="M8.5 2.5a16.63 16.63 0 0 1 7.15 17.7"></path>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" title="Twitter / X" aria-label="Twitter">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar-box">
+                        <div class="team-avatar-inner">MV</div>
+                    </div>
+                    <h3 class="team-name">Marcus Vance</h3>
+                    <div class="team-role">Lead Security Engineer</div>
+                    <p class="team-bio">Cybersecurity researcher and cryptographer championing zero-knowledge authentication models across global clusters.</p>
+                    <div class="team-socials">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" title="GitHub" aria-label="GitHub">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" title="LinkedIn" aria-label="LinkedIn">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar-box">
+                        <div class="team-avatar-inner">SC</div>
+                    </div>
+                    <h3 class="team-name">Sophia Chen</h3>
+                    <div class="team-role">Head of Dev Relations</div>
+                    <p class="team-bio">Community architect connecting over 250,000 developers, hosting hackathons, and fostering open collaboration.</p>
+                    <div class="team-socials">
+                        <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" title="Discord" aria-label="Discord">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" title="Twitter / X" aria-label="Twitter">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive CTA Banner -->
+        <section class="cta-banner">
+            <div class="cta-banner-content">
+                <h2 class="cta-banner-title">Ready to Experience the Future?</h2>
+                <p class="cta-banner-desc">
+                    Join hundreds of thousands of developers already building modern web applications with Hello World today.
+                </p>
+                <div class="hero-actions">
+                    <a href="hello_world.html" class="btn-primary-glow">
+                        <span>Get Started Now</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="contact.html" class="btn-secondary-glass">
+                        <span>Contact Our Team</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Universal Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Column 1: Brand & Status -->
+                <div class="footer-brand-col">
+                    <a href="hello_world.html" class="brand">
+                        <div class="brand-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                        </div>
+                        <span class="brand-text">Hello<span class="highlight">World</span></span>
+                    </a>
+                    <p class="footer-brand-desc">
+                        Engineering next-generation web portals with unparalleled speed, sublime aesthetics, and bulletproof security.
+                    </p>
+                    <div class="system-status-pill">
+                        <span class="status-dot-pulse"></span>
+                        <span>All Systems Operational</span>
+                    </div>
+                </div>
+
+                <!-- Column 2: Navigation Links -->
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="hello_world.html">Home Portal</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Support</a></li>
+                        <li><a href="hello_world.html#signup">Create Account</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Resources -->
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#docs" onclick="event.preventDefault(); showToast('Documentation hub coming soon!', 'info')">Documentation</a></li>
+                        <li><a href="#security" onclick="event.preventDefault(); showToast('Security whitepaper verified', 'info')">Security Center</a></li>
+                        <li><a href="#changelog" onclick="event.preventDefault(); showToast('Version 2.4.0 active', 'info')">Changelog</a></li>
+                        <li><a href="#api" onclick="event.preventDefault(); showToast('API access enabled', 'info')">Developer API</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Connect & Socials -->
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+                        <li><a href="https://discord.com" target="_blank" rel="noopener noreferrer">Discord Community</a></li>
+                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+                        <li><a href="contact.html">Direct Inquiries</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright & Policies -->
+            <div class="footer-bottom">
+                <div class="footer-copy">
+                    &copy; 2026 Hello World Platform. Crafted with excellence. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#privacy" onclick="event.preventDefault(); showToast('Privacy Policy: Zero data tracking', 'info')">Privacy Policy</a>
+                    <a href="#terms" onclick="event.preventDefault(); showToast('Terms of Service: Standard open developer license', 'info')">Terms of Service</a>
+                    <a href="contact.html">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Universal Script -->
+    <script src="script.js"></script>
+</body>
+</html>
